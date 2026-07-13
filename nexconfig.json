@@ -1,0 +1,55 @@
+{
+    "name": "nexcord-core",
+    "version": "0.0.1",
+    "description": "Nexcord basic project recipe",
+    "keywords": [
+        "nexcord",
+        "nex",
+        "signorp",
+        "discord.js",
+        "discord-bots",
+        "framework"
+    ],
+    "files": [
+        "src",
+        "recipes/nexcord-core/README.md",
+        ".env.example",
+        "package.json",
+        "tsconfig.json"
+    ],
+    "scripts": {
+        "bot": "bun run src/index"
+    },
+    "setup": {
+        "scripts": [
+            "bun install discord.js @nexcord/core @nexcord/config @nexcord/tsx"
+        ],
+        "files": {
+            "src": {
+                "common": {
+                    "actions": {
+                        "HelloButton.action.ts": "src/common/actions"
+                    }
+                },
+                "components": {
+                    "components.tsx": "src/components"
+                },
+                "configs": {
+                    "app.config.ts": "src/configs"
+                },
+                "events": {
+                    "Init.events.ts": "src/events"
+                },
+                "index.ts": "src",
+                "services": {
+                    "Logger.service.ts": "src/services",
+                    "Test.service.ts": "src/services"
+                }
+            },
+            "recipes/nexcord-core/README.md": "recipes/nexcord-core",
+            ".env.example": ".",
+            "package.json": ".",
+            "tsconfig.json": "."
+        }
+    }
+}

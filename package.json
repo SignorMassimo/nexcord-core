@@ -1,0 +1,22 @@
+{
+  "name": "nexcord",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "bot": "bun run src/index",
+    "bot:dev": "bun run --hot src/index"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@nexcord/config": "^0.0.1",
+    "@nexcord/core": "^0.0.2",
+    "@nexcord/tsx": "^0.0.1",
+    "discord.js": "^14.26.4",
+    "reflect-metadata": "^0.2.2"
+  }
+}
